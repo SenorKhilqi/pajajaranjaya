@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hubungi Bengkel Kopling Pro untuk konsultasi masalah kopling mobil Anda dan jadwalkan pemeriksaan."
+    />
+    <title>Bengkel Kopling Pro | Kontak</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Kopling<span>Pro</span></a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a class="active" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="page-section">
+      <div class="container contact-wrap">
+        <h1 class="section-title">Hubungi Kami</h1>
+        <p class="section-intro">
+          Konsultasikan gejala kopling mobil Anda. Tim kami akan merespons secepat mungkin untuk membantu jadwal
+          pemeriksaan.
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input id="nama" type="text" name="nama" placeholder="Nama lengkap" required />
+          </div>
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input id="telepon" type="tel" name="telepon" placeholder="08xxxxxxxxxx" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Keluhan</label>
+            <textarea id="pesan" name="pesan" placeholder="Contoh: Kopling terasa slip saat tanjakan" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Kirim Permintaan</button>
+          <p class="note">Jam operasional: Senin - Sabtu, 08.00 - 17.00 WIB.</p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">&copy; <span id="year"></span> KoplingPro. Seluruh hak cipta dilindungi.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
