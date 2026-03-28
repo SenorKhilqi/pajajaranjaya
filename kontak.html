@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Hubungi Bengkel Kopling Pro untuk konsultasi masalah kopling mobil Anda dan jadwalkan pemeriksaan."
+      content="Hubungi Bengkel  untuk konsultasi masalah kopling mobil Anda dan jadwalkan pemeriksaan."
     />
-    <title>Bengkel Kopling Pro | Kontak</title>
+    <title>Bengkel Pajajaran Jaya Kontak</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="logo" href="index.html">Kopling<span>Pro</span></a>
+        <a class="logo" href="index.html" aria-label="Pajajaran Jaya - Beranda">
+          <img class="logo-mark" src="tempat/logo.png" alt="Logo Pajajaran Jaya" />
+          <span class="logo-text">Pajajaran<span>Jaya</span></span>
+        </a>
         <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
           <span class="hamburger"></span>
         </button>
@@ -34,27 +37,65 @@
           pemeriksaan.
         </p>
 
-        <form>
+        <form id="wa-contact-form">
           <div class="form-group">
             <label for="nama">Nama</label>
             <input id="nama" type="text" name="nama" placeholder="Nama lengkap" required />
           </div>
           <div class="form-group">
-            <label for="telepon">Nomor Telepon</label>
-            <input id="telepon" type="tel" name="telepon" placeholder="08xxxxxxxxxx" required />
+            <label for="merek-mobil">Merek Mobil</label>
+            <input id="merek-mobil" type="text" name="merek_mobil" placeholder="Contoh: Toyota Avanza" required />
           </div>
           <div class="form-group">
-            <label for="pesan">Keluhan</label>
+            <label for="pesan">Keluhan Kendaraan</label>
             <textarea id="pesan" name="pesan" placeholder="Contoh: Kopling terasa slip saat tanjakan" required></textarea>
           </div>
           <button class="btn btn-primary btn-block" type="submit">Kirim Permintaan</button>
           <p class="note">Jam operasional: Senin - Sabtu, 08.00 - 17.00 WIB.</p>
+          <p class="note">Setelah klik kirim, Anda akan diarahkan ke WhatsApp admin.</p>
         </form>
+
+        <section class="map-section" aria-label="Lokasi bengkel">
+          <h2 class="section-title">Lokasi Kami</h2>
+          <p class="section-intro">Temukan bengkel kami dengan mudah melalui peta berikut.</p>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.820131284923!2d112.15390479999999!3d-8.1197886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ebfa93a4b62b%3A0xb72c8a0e3594ad39!2sPajajaran%20Jaya!5e0!3m2!1sid!2ssg!4v1774678619966!5m2!1sid!2ssg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Bengkel Pajajaran Jaya"
+            ></iframe>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">&copy; <span id="year"></span> KoplingPro. Seluruh hak cipta dilindungi.</div>
+      <div class="container footer-grid">
+        <section>
+          <h3 class="footer-title">Pajajaran Jaya</h3>
+          <p class="footer-text">Spesialis kopling mobil dengan proses kerja rapi, transparan, dan tepat waktu.</p>
+        </section>
+        <section>
+          <h3 class="footer-title">Kontak</h3>
+          <p class="footer-text">WhatsApp: 081252902876</p>
+          <p class="footer-text">Senin - Sabtu, 08.00 - 17.00 WIB</p>
+        </section>
+        <nav aria-label="Navigasi footer">
+          <h3 class="footer-title">Navigasi Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">&copy; <span id="year"></span> Pajajaran Jaya. Seluruh hak cipta dilindungi.</div>
     </footer>
 
     <script src="script.js"></script>

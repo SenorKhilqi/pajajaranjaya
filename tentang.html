@@ -13,7 +13,10 @@
   <body>
     <header class="site-header">
       <div class="container nav">
-        <a class="logo" href="index.html">Kopling<span>Pro</span></a>
+        <a class="logo" href="index.html" aria-label="Pajajaran Jaya - Beranda">
+          <img class="logo-mark" src="tempat/logo.png" alt="Logo Pajajaran Jaya" />
+          <span class="logo-text">Pajajaran<span>Jaya</span></span>
+        </a>
         <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
           <span class="hamburger"></span>
         </button>
@@ -31,7 +34,7 @@
         <section>
           <h1 class="section-title">Tentang Bengkel Kami</h1>
           <p class="section-intro">
-            KoplingPro hadir sebagai bengkel spesialis kopling mobil yang fokus pada hasil pengerjaan presisi,
+            Pajajaran Jaya hadir sebagai bengkel spesialis kopling mobil yang fokus pada hasil pengerjaan presisi,
             komunikasi jujur, dan kenyamanan pelanggan dari awal hingga selesai servis.
           </p>
           <article class="info-card">
@@ -47,17 +50,34 @@
           </article>
         </section>
 
-        <aside class="visual-placeholder" aria-label="Placeholder gambar bengkel">
-          <div>
-            <h3>Area Visual Bengkel</h3>
-            <p>Tempatkan foto workshop, tim teknisi, atau proses servis kopling agar lebih meyakinkan.</p>
-          </div>
+        <aside class="about-photo-wrap" aria-label="Foto bengkel Pajajaran Jaya">
+          <img class="about-photo" src="tempat/tempat.jpg" alt="Foto area Bengkel Pajajaran Jaya" />
         </aside>
       </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">&copy; <span id="year"></span> KoplingPro. Seluruh hak cipta dilindungi.</div>
+      <div class="container footer-grid">
+        <section>
+          <h3 class="footer-title">Pajajaran Jaya</h3>
+          <p class="footer-text">Spesialis kopling mobil dengan proses kerja rapi, transparan, dan tepat waktu.</p>
+        </section>
+        <section>
+          <h3 class="footer-title">Kontak</h3>
+          <p class="footer-text">WhatsApp: 081252902876</p>
+          <p class="footer-text">Senin - Sabtu, 08.00 - 17.00 WIB</p>
+        </section>
+        <nav aria-label="Navigasi footer">
+          <h3 class="footer-title">Navigasi Cepat</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">&copy; <span id="year"></span> Pajajaran Jaya. Seluruh hak cipta dilindungi.</div>
     </footer>
 
     <script src="script.js"></script>

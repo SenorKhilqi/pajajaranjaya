@@ -30,3 +30,29 @@ if (navToggle && navMenu) {
     }
   });
 }
+
+const waContactForm = document.getElementById('wa-contact-form');
+
+if (waContactForm) {
+  waContactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const nama = document.getElementById('nama')?.value.trim() || '';
+    const merekMobil = document.getElementById('merek-mobil')?.value.trim() || '';
+    const pesan = document.getElementById('pesan')?.value.trim() || '';
+
+    const adminPhoneRaw = '081252902876';
+    const adminPhone = adminPhoneRaw.startsWith('0') ? `62${adminPhoneRaw.slice(1)}` : adminPhoneRaw;
+
+    const text = [
+      'Halo Bengkel Pajajaran Jaya, saya ingin konsultasi.',
+      '',
+      `Nama: ${nama}`,
+      `Merek Mobil: ${merekMobil}`,
+      `Keluhan Saya: ${pesan}`,
+    ].join('\n');
+
+    const waUrl = `https://wa.me/${adminPhone}?text=${encodeURIComponent(text)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  });
+}
